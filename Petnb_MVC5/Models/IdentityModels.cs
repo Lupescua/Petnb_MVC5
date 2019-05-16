@@ -3,6 +3,8 @@ using System.Security.Claims;
 using System.Threading.Tasks;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
+using System.Collections.Generic;
+using Petnb_MVC5.Models.Enums;
 
 namespace Petnb_MVC5.Models
 {
@@ -16,6 +18,12 @@ namespace Petnb_MVC5.Models
             // Add custom user claims here
             return userIdentity;
         }
+
+        public string FullName { get; set; }
+        public List<Review> Reviews { get; set; } = new List<Review>();
+        public double? Rating { get; set; }
+        public string Address { get; set; }
+        public int? Age { get; set; }
     }
 
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
