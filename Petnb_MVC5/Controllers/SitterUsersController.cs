@@ -17,11 +17,11 @@ namespace Petnb_MVC5.Controllers
         // GET: SitterUsers
         public ActionResult Index()
         {
-            return View(db.Users.ToList());
+            return View(db.SitterUsers.ToList());
         }
 
         // GET: SitterUsers/Details/5
-        public ActionResult Details(string id)
+        public ActionResult Details(int? id)
         {
             if (id == null)
             {
@@ -46,11 +46,11 @@ namespace Petnb_MVC5.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "Id,FullName,Rating,Address,Age,Email,EmailConfirmed,PasswordHash,SecurityStamp,PhoneNumber,PhoneNumberConfirmed,TwoFactorEnabled,LockoutEndDateUtc,LockoutEnabled,AccessFailedCount,UserName,SitterUserId")] SitterUser sitterUser)
+        public ActionResult Create([Bind(Include = "SitterUserId")] SitterUser sitterUser)
         {
             if (ModelState.IsValid)
             {
-                db.Users.Add(sitterUser);
+                db.SitterUsers.Add(sitterUser);
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
@@ -59,7 +59,7 @@ namespace Petnb_MVC5.Controllers
         }
 
         // GET: SitterUsers/Edit/5
-        public ActionResult Edit(string id)
+        public ActionResult Edit(int? id)
         {
             if (id == null)
             {
@@ -78,7 +78,7 @@ namespace Petnb_MVC5.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "Id,FullName,Rating,Address,Age,Email,EmailConfirmed,PasswordHash,SecurityStamp,PhoneNumber,PhoneNumberConfirmed,TwoFactorEnabled,LockoutEndDateUtc,LockoutEnabled,AccessFailedCount,UserName,SitterUserId")] SitterUser sitterUser)
+        public ActionResult Edit([Bind(Include = "SitterUserId")] SitterUser sitterUser)
         {
             if (ModelState.IsValid)
             {
@@ -90,7 +90,7 @@ namespace Petnb_MVC5.Controllers
         }
 
         // GET: SitterUsers/Delete/5
-        public ActionResult Delete(string id)
+        public ActionResult Delete(int? id)
         {
             if (id == null)
             {
@@ -107,10 +107,10 @@ namespace Petnb_MVC5.Controllers
         // POST: SitterUsers/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
-        public ActionResult DeleteConfirmed(string id)
+        public ActionResult DeleteConfirmed(int id)
         {
             SitterUser sitterUser = db.SitterUsers.Find(id);
-            db.Users.Remove(sitterUser);
+            db.SitterUsers.Remove(sitterUser);
             db.SaveChanges();
             return RedirectToAction("Index");
         }

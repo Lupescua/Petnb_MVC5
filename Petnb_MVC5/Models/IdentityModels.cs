@@ -20,7 +20,6 @@ namespace Petnb_MVC5.Models
         }
 
         public string FullName { get; set; }
-        public List<Review> Reviews { get; set; } = new List<Review>();
         public double? Rating { get; set; }
         public string Address { get; set; }
         public int? Age { get; set; }
@@ -29,7 +28,7 @@ namespace Petnb_MVC5.Models
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
         public ApplicationDbContext()
-            : base("Pet2", throwIfV1Schema: false)
+            : base("Pet3", throwIfV1Schema: false)
         {
             Database.SetInitializer<ApplicationDbContext>(new CreateDatabaseIfNotExists<ApplicationDbContext>());
         }

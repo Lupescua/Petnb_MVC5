@@ -98,9 +98,11 @@ C:\Baa\Petnb_MVC5\Petnb_MVC5\bin\Microsoft.Owin.Security.Twitter.xml
 C:\Baa\Petnb_MVC5\Petnb_MVC5\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 C:\Baa\Petnb_MVC5\Petnb_MVC5\bin\Microsoft.Owin.Security.OAuth.xml
 C:\Baa\Petnb_MVC5\Petnb_MVC5\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Baa\Petnb_MVC5\Petnb_MVC5\obj\Debug\Petnb_MVC5.Migrations.pet2.resources
-C:\Baa\Petnb_MVC5\Petnb_MVC5\obj\Debug\Petnb_MVC5.csproj.GenerateResource.cache
 C:\Baa\Petnb_MVC5\Petnb_MVC5\obj\Debug\Petnb_MVC5.csproj.CoreCompileInputs.cache
 C:\Baa\Petnb_MVC5\Petnb_MVC5\obj\Debug\Petnb_MVC5.csproj.CopyComplete
 C:\Baa\Petnb_MVC5\Petnb_MVC5\obj\Debug\Petnb_MVC5.dll
 C:\Baa\Petnb_MVC5\Petnb_MVC5\obj\Debug\Petnb_MVC5.pdb
+C:\Baa\Petnb_MVC5\Petnb_MVC5\obj\Debug\Petnb_MVC5.csprojAssemblyReference.cache
+C:\Baa\Petnb_MVC5\Petnb_MVC5\obj\Debug\Petnb_MVC5.Migrations.test6.resources
+C:\Baa\Petnb_MVC5\Petnb_MVC5\obj\Debug\Petnb_MVC5.csproj.GenerateResource.cache
+C:\Baa\Petnb_MVC5\Petnb_MVC5\obj\Debug\Petnb_MVC5.Migrations.test7.resources

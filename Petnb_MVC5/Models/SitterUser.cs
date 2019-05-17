@@ -1,11 +1,12 @@
-﻿using System;
+﻿using Microsoft.AspNet.Identity.EntityFramework;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
 namespace Petnb_MVC5.Models
 {
-    public class SitterUser : ApplicationUser
+    public class SitterUser
     {
         public int SitterUserId { get; set; }
         public ApplicationUser ApplicationUser { get; set; }
