@@ -37,5 +37,17 @@ namespace Petnb_MVC5.Models
         {
             return new ApplicationDbContext();
         }
+
+        public System.Data.Entity.DbSet<Petnb_MVC5.Models.OwnerUser> OwnerUsers { get; set; }
+
+        public System.Data.Entity.DbSet<Petnb_MVC5.Models.SitterUser> ApplicationUsers { get; set; }
+
+        public System.Data.Entity.DbSet<Petnb_MVC5.Models.Pet> Pets { get; set; }
+
+        public System.Data.Entity.DbSet<Petnb_MVC5.Models.Review> Reviews { get; set; }
+
+        public System.Data.Entity.DbSet<Petnb_MVC5.Models.PetOffer> PetOffers { get; set; }
+
+        public System.Data.Entity.DbSet<Petnb_MVC5.Models.PetSitterOffer> PetSitterOffers { get; set; }
     }
 }

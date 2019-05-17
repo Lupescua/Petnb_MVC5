@@ -104,4 +104,3 @@ C:\Baa\Petnb_MVC5\Petnb_MVC5\obj\Debug\Petnb_MVC5.dll
 C:\Baa\Petnb_MVC5\Petnb_MVC5\obj\Debug\Petnb_MVC5.pdb
 C:\Baa\Petnb_MVC5\Petnb_MVC5\obj\Debug\Petnb_MVC5.Migrations.InitialCreate.resources
 C:\Baa\Petnb_MVC5\Petnb_MVC5\obj\Debug\Petnb_MVC5.csproj.GenerateResource.cache
-C:\Baa\Petnb_MVC5\Petnb_MVC5\obj\Debug\Petnb_MVC5.csprojAssemblyReference.cache

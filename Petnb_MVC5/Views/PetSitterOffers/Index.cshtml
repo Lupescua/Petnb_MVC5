@@ -1,0 +1,77 @@
+﻿@model IEnumerable<Petnb_MVC5.Models.PetSitterOffer>
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <p>
+        @Html.ActionLink("Create New", "Create")
+    </p>
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.OwnerUser.FullName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Heading)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Content)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Location)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.StartOfSit)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EndOfSit)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ExpectedSalary)
+            </th>
+            <th></th>
+        </tr>
+    
+    @foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.OwnerUser.FullName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Heading)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Content)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Location)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.StartOfSit)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EndOfSit)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ExpectedSalary)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id=item.PetSitterOfferId }) |
+                @Html.ActionLink("Details", "Details", new { id=item.PetSitterOfferId }) |
+                @Html.ActionLink("Delete", "Delete", new { id=item.PetSitterOfferId })
+            </td>
+        </tr>
+    }
+    
+    </table>
+</body>
+</html>

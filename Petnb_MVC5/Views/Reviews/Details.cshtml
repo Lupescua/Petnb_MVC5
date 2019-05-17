@@ -1,0 +1,74 @@
+﻿@model Petnb_MVC5.Models.Review
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Details</title>
+</head>
+<body>
+    <div>
+        <h4>Review</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.SitterUserId)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.SitterUserId)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.OwnerUserId)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.OwnerUserId)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.Heading)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Heading)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.Content)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Content)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.Rating)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Rating)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.DateGiven)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.DateGiven)
+            </dd>
+    
+        </dl>
+    </div>
+    <p>
+        @Html.ActionLink("Edit", "Edit", new { id = Model.ReviewId }) |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+</body>
+</html>

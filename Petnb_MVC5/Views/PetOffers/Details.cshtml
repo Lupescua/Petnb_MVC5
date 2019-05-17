@@ -1,0 +1,98 @@
+﻿@model Petnb_MVC5.Models.PetOffer
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Details</title>
+</head>
+<body>
+    <div>
+        <h4>PetOffer</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.SitterUser.FullName)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.SitterUser.FullName)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.Heading)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Heading)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.Content)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Content)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.Reward)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Reward)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.PetLocation)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.PetLocation)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.PetNeeds)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.PetNeeds)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.StartOfSit)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.StartOfSit)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.EndOfSit)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.EndOfSit)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.PetId)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.PetId)
+            </dd>
+    
+        </dl>
+    </div>
+    <p>
+        @Html.ActionLink("Edit", "Edit", new { id = Model.PetOfferId }) |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+</body>
+</html>

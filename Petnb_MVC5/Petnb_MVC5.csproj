@@ -172,6 +172,12 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\OwnerUsersController.cs" />
+    <Compile Include="Controllers\PetOffersController.cs" />
+    <Compile Include="Controllers\PetsController.cs" />
+    <Compile Include="Controllers\PetSitterOffersController.cs" />
+    <Compile Include="Controllers\ReviewsController.cs" />
+    <Compile Include="Controllers\SitterUsersController.cs" />
     <Compile Include="DAL\DatabaseContext.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -259,6 +265,36 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\OwnerUsers\Create.cshtml" />
+    <Content Include="Views\OwnerUsers\Delete.cshtml" />
+    <Content Include="Views\OwnerUsers\Details.cshtml" />
+    <Content Include="Views\OwnerUsers\Edit.cshtml" />
+    <Content Include="Views\OwnerUsers\Index.cshtml" />
+    <Content Include="Views\SitterUsers\Create.cshtml" />
+    <Content Include="Views\SitterUsers\Delete.cshtml" />
+    <Content Include="Views\SitterUsers\Details.cshtml" />
+    <Content Include="Views\SitterUsers\Edit.cshtml" />
+    <Content Include="Views\SitterUsers\Index.cshtml" />
+    <Content Include="Views\Pets\Create.cshtml" />
+    <Content Include="Views\Pets\Delete.cshtml" />
+    <Content Include="Views\Pets\Details.cshtml" />
+    <Content Include="Views\Pets\Edit.cshtml" />
+    <Content Include="Views\Pets\Index.cshtml" />
+    <Content Include="Views\Reviews\Create.cshtml" />
+    <Content Include="Views\Reviews\Delete.cshtml" />
+    <Content Include="Views\Reviews\Details.cshtml" />
+    <Content Include="Views\Reviews\Edit.cshtml" />
+    <Content Include="Views\Reviews\Index.cshtml" />
+    <Content Include="Views\PetOffers\Create.cshtml" />
+    <Content Include="Views\PetOffers\Delete.cshtml" />
+    <Content Include="Views\PetOffers\Details.cshtml" />
+    <Content Include="Views\PetOffers\Edit.cshtml" />
+    <Content Include="Views\PetOffers\Index.cshtml" />
+    <Content Include="Views\PetSitterOffers\Create.cshtml" />
+    <Content Include="Views\PetSitterOffers\Delete.cshtml" />
+    <Content Include="Views\PetSitterOffers\Details.cshtml" />
+    <Content Include="Views\PetSitterOffers\Edit.cshtml" />
+    <Content Include="Views\PetSitterOffers\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
