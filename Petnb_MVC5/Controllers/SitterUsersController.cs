@@ -17,7 +17,7 @@ namespace Petnb_MVC5.Controllers
         // GET: SitterUsers
         public ActionResult Index()
         {
-            return View(db.ApplicationUsers.ToList());
+            return View(db.Users.ToList());
         }
 
         // GET: SitterUsers/Details/5
@@ -27,7 +27,7 @@ namespace Petnb_MVC5.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            SitterUser sitterUser = db.ApplicationUsers.Find(id);
+            SitterUser sitterUser = db.SitterUsers.Find(id);
             if (sitterUser == null)
             {
                 return HttpNotFound();
@@ -50,7 +50,7 @@ namespace Petnb_MVC5.Controllers
         {
             if (ModelState.IsValid)
             {
-                db.ApplicationUsers.Add(sitterUser);
+                db.Users.Add(sitterUser);
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
@@ -65,7 +65,7 @@ namespace Petnb_MVC5.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            SitterUser sitterUser = db.ApplicationUsers.Find(id);
+            SitterUser sitterUser = db.SitterUsers.Find(id);
             if (sitterUser == null)
             {
                 return HttpNotFound();
@@ -96,7 +96,7 @@ namespace Petnb_MVC5.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            SitterUser sitterUser = db.ApplicationUsers.Find(id);
+            SitterUser sitterUser = db.SitterUsers.Find(id);
             if (sitterUser == null)
             {
                 return HttpNotFound();
@@ -109,8 +109,8 @@ namespace Petnb_MVC5.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(string id)
         {
-            SitterUser sitterUser = db.ApplicationUsers.Find(id);
-            db.ApplicationUsers.Remove(sitterUser);
+            SitterUser sitterUser = db.SitterUsers.Find(id);
+            db.Users.Remove(sitterUser);
             db.SaveChanges();
             return RedirectToAction("Index");
         }

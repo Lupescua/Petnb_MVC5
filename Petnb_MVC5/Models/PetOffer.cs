@@ -23,7 +23,7 @@ namespace Petnb_MVC5.Models
         public Pet Pet { get; set; }
 
         public string SitterUserId { get; set; }
-        public ApplicationUser SitterUser { get; set; }
+        public SitterUser SitterUser { get; set; }
 
     }
 }

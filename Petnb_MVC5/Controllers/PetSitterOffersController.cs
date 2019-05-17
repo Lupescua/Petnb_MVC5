@@ -39,7 +39,7 @@ namespace Petnb_MVC5.Controllers
         // GET: PetSitterOffers/Create
         public ActionResult Create()
         {
-            ViewBag.OwnerUserId = new SelectList(db.ApplicationUsers, "Id", "FullName");
+            ViewBag.OwnerUserId = new SelectList(db.OwnerUsers, "Id", "FullName");
             return View();
         }
 
@@ -57,7 +57,7 @@ namespace Petnb_MVC5.Controllers
                 return RedirectToAction("Index");
             }
 
-            ViewBag.OwnerUserId = new SelectList(db.ApplicationUsers, "Id", "FullName", petSitterOffer.OwnerUserId);
+            ViewBag.OwnerUserId = new SelectList(db.OwnerUsers, "Id", "FullName", petSitterOffer.OwnerUserId);
             return View(petSitterOffer);
         }
 
@@ -73,7 +73,7 @@ namespace Petnb_MVC5.Controllers
             {
                 return HttpNotFound();
             }
-            ViewBag.OwnerUserId = new SelectList(db.ApplicationUsers, "Id", "FullName", petSitterOffer.OwnerUserId);
+            ViewBag.OwnerUserId = new SelectList(db.OwnerUsers, "Id", "FullName", petSitterOffer.OwnerUserId);
             return View(petSitterOffer);
         }
 
@@ -90,7 +90,7 @@ namespace Petnb_MVC5.Controllers
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
-            ViewBag.OwnerUserId = new SelectList(db.ApplicationUsers, "Id", "FullName", petSitterOffer.OwnerUserId);
+            ViewBag.OwnerUserId = new SelectList(db.OwnerUsers, "Id", "FullName", petSitterOffer.OwnerUserId);
             return View(petSitterOffer);
         }
 

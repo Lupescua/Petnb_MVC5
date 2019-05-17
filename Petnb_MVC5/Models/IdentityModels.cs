@@ -29,10 +29,11 @@ namespace Petnb_MVC5.Models
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
         public ApplicationDbContext()
-            : base("DefaultConnection", throwIfV1Schema: false)
+            : base("Pet2", throwIfV1Schema: false)
         {
+            Database.SetInitializer<ApplicationDbContext>(new CreateDatabaseIfNotExists<ApplicationDbContext>());
         }
-
+       
         public static ApplicationDbContext Create()
         {
             return new ApplicationDbContext();
@@ -40,8 +41,8 @@ namespace Petnb_MVC5.Models
 
         public System.Data.Entity.DbSet<Petnb_MVC5.Models.OwnerUser> OwnerUsers { get; set; }
 
-        public System.Data.Entity.DbSet<Petnb_MVC5.Models.SitterUser> ApplicationUsers { get; set; }
-
+        public System.Data.Entity.DbSet<Petnb_MVC5.Models.SitterUser> SitterUsers { get; set; }
+        
         public System.Data.Entity.DbSet<Petnb_MVC5.Models.Pet> Pets { get; set; }
 
         public System.Data.Entity.DbSet<Petnb_MVC5.Models.Review> Reviews { get; set; }

@@ -9,12 +9,11 @@ namespace Petnb_MVC5.Models
     {
         //properties
         public int ReviewId { get; set; }
-        public ApplicationUser ReviewedApplicationUser { get; set; }
 
         public string SitterUserId { get; set; }
         public List<SitterUser> SitterUser { get; set; } = new List<SitterUser>();
         public string OwnerUserId { get; set; }
-        public List<OwnerUser> OwnerUsers { get; set; } = new List<OwnerUser>();
+        public List<OwnerUser> OwnerUser { get; set; } = new List<OwnerUser>();
 
         public string Heading { get; set; }
         public string Content { get; set; }

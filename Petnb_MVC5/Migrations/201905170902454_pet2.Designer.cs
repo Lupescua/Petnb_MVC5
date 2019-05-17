@@ -7,13 +7,13 @@ namespace Petnb_MVC5.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.2.0-61023")]
-    public sealed partial class InitialCreate : IMigrationMetadata
+    public sealed partial class pet2 : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(InitialCreate));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(pet2));
         
         string IMigrationMetadata.Id
         {
-            get { return "201905140913123_InitialCreate"; }
+            get { return "201905170902454_pet2"; }
         }
         
         string IMigrationMetadata.Source

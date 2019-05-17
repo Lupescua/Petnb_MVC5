@@ -1,69 +1,77 @@
 ﻿@model IEnumerable<Petnb_MVC5.Models.Pet>
 
 @{
-    ViewBag.Title = "Index";
+    Layout = null;
 }
 
-<h2>Index</h2>
+<!DOCTYPE html>
 
-<p>
-    @Html.ActionLink("Create New", "Create")
-</p>
-<table class="table">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.OwnerUser.FullName)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.PetName)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.PetType)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.PetAge)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.PetDifficulty)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.PetWeight)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.PetBreed)
-        </th>
-        <th></th>
-    </tr>
-
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.OwnerUser.FullName)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.PetName)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.PetType)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.PetAge)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.PetDifficulty)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.PetWeight)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.PetBreed)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.PetId }) |
-            @Html.ActionLink("Details", "Details", new { id=item.PetId }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.PetId })
-        </td>
-    </tr>
-}
-
-</table>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <p>
+        @Html.ActionLink("Create New", "Create")
+    </p>
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.OwnerUser.FullName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PetName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PetType)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PetAge)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PetDifficulty)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PetWeight)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PetBreed)
+            </th>
+            <th></th>
+        </tr>
+    
+    @foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.OwnerUser.FullName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PetName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PetType)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PetAge)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PetDifficulty)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PetWeight)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PetBreed)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id=item.PetId }) |
+                @Html.ActionLink("Details", "Details", new { id=item.PetId }) |
+                @Html.ActionLink("Delete", "Delete", new { id=item.PetId })
+            </td>
+        </tr>
+    }
+    
+    </table>
+</body>
+</html>

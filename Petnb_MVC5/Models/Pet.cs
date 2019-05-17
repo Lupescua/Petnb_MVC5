@@ -17,7 +17,7 @@ namespace Petnb_MVC5.Models
         public string PetBreed { get; set; }
 
         public string OwnerUserId { get; set; }
-        public ApplicationUser OwnerUser { get; set; }
+        public OwnerUser OwnerUser { get; set; }
 
         public List<PetOffer> PetOffers { get; set; } = new List<PetOffer>();
     }

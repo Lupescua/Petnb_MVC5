@@ -176,15 +176,13 @@
     <Compile Include="Controllers\PetOffersController.cs" />
     <Compile Include="Controllers\PetsController.cs" />
     <Compile Include="Controllers\PetSitterOffersController.cs" />
-    <Compile Include="Controllers\ReviewsController.cs" />
     <Compile Include="Controllers\SitterUsersController.cs" />
-    <Compile Include="DAL\DatabaseContext.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201905140913123_InitialCreate.cs" />
-    <Compile Include="Migrations\201905140913123_InitialCreate.Designer.cs">
-      <DependentUpon>201905140913123_InitialCreate.cs</DependentUpon>
+    <Compile Include="Migrations\201905170902454_pet2.cs" />
+    <Compile Include="Migrations\201905170902454_pet2.Designer.cs">
+      <DependentUpon>201905170902454_pet2.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -231,7 +229,9 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
@@ -270,21 +270,11 @@
     <Content Include="Views\OwnerUsers\Details.cshtml" />
     <Content Include="Views\OwnerUsers\Edit.cshtml" />
     <Content Include="Views\OwnerUsers\Index.cshtml" />
-    <Content Include="Views\SitterUsers\Create.cshtml" />
-    <Content Include="Views\SitterUsers\Delete.cshtml" />
-    <Content Include="Views\SitterUsers\Details.cshtml" />
-    <Content Include="Views\SitterUsers\Edit.cshtml" />
-    <Content Include="Views\SitterUsers\Index.cshtml" />
     <Content Include="Views\Pets\Create.cshtml" />
     <Content Include="Views\Pets\Delete.cshtml" />
     <Content Include="Views\Pets\Details.cshtml" />
     <Content Include="Views\Pets\Edit.cshtml" />
     <Content Include="Views\Pets\Index.cshtml" />
-    <Content Include="Views\Reviews\Create.cshtml" />
-    <Content Include="Views\Reviews\Delete.cshtml" />
-    <Content Include="Views\Reviews\Details.cshtml" />
-    <Content Include="Views\Reviews\Edit.cshtml" />
-    <Content Include="Views\Reviews\Index.cshtml" />
     <Content Include="Views\PetOffers\Create.cshtml" />
     <Content Include="Views\PetOffers\Delete.cshtml" />
     <Content Include="Views\PetOffers\Details.cshtml" />
@@ -295,6 +285,11 @@
     <Content Include="Views\PetSitterOffers\Details.cshtml" />
     <Content Include="Views\PetSitterOffers\Edit.cshtml" />
     <Content Include="Views\PetSitterOffers\Index.cshtml" />
+    <Content Include="Views\SitterUsers\Create.cshtml" />
+    <Content Include="Views\SitterUsers\Delete.cshtml" />
+    <Content Include="Views\SitterUsers\Details.cshtml" />
+    <Content Include="Views\SitterUsers\Edit.cshtml" />
+    <Content Include="Views\SitterUsers\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -313,8 +308,8 @@
     <Content Include="Scripts\jquery-3.3.1.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201905140913123_InitialCreate.resx">
-      <DependentUpon>201905140913123_InitialCreate.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201905170902454_pet2.resx">
+      <DependentUpon>201905170902454_pet2.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

@@ -14,10 +14,10 @@ namespace Petnb_MVC5.Models
         public DateTime StartOfSit { get; set; }
         public DateTime EndOfSit { get; set; }
         public int ExpectedSalary { get; set; }
-        public ApplicationUser SitterUser { get; set; }
+        public SitterUser SitterUser { get; set; }
 
         public string OwnerUserId { get; set; }
-        public ApplicationUser OwnerUser { get; set; }
+        public OwnerUser OwnerUser { get; set; }
 
     }
 }
