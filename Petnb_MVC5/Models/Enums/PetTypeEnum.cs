@@ -5,7 +5,7 @@ using System.Web;
 
 namespace Petnb_MVC5.Models.Enums
 {
-    public enum PetType
+    public enum PetTypeEnum
     {
         Unknown = 0,
         Dog = 1,
